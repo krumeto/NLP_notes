@@ -43,5 +43,15 @@ Step 5: Get the log prio = log(Number of positive tweets/Number of negative twee
 
 Sum the lambdas + logprior(). > 0 is positive.
 
+#### Naive in the Naive Bayes - Assumptions
 
+1. Independence between features
+    "It is sunny and hot in the Sahara desert." - sunny and hot come frequently together, but Naive B. assumes they are. Does not take context into account
+
+2. Relative frequencies in corpus - train corpus vs. real-live corpus distribution might lead to very optimistic or pessimistic model.
+
+#### Sources of error:
+1. Adversarial attacks (sarcasm, irony, euphemism)
+2. Removing punctuation.
+3. Word order changing meaning.
 
