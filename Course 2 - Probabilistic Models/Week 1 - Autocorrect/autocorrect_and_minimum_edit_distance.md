@@ -29,3 +29,5 @@ deletes = [L + R[1:] for L, R in splits if R]
 - Levenshtain distance - cost insert 1, delete 1, replace 2
 - Backtrace is important - paths through the table
 - the tabular method is the dynamic programming - solve a small problem and reuse the solution to solve a bigger problem.
+
+### The End
