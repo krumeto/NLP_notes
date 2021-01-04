@@ -13,3 +13,7 @@ A repo to store my NLP notes and exercises
   - SpaCy for Digital Humanities Playlist https://www.youtube.com/watch?v=8HZ4BjWMod4&list=PL2VXyKi-KpYvuOdPwXR-FZfmZ0hjoNSUo&ab_channel=PythonTutorialsforDigitalHumanities
   - Nice SpaCy three-part tutorial - https://github.com/yuibi/spacy_tutorial
   - Very Nice Collection of Related Projects - https://spacy.io/universe
+
+## Natural Language University Courses:
+  - Stanford - http://web.stanford.edu/class/cs224u/ / https://www.youtube.com/playlist?list=PLoROMvodv4rObpMCir6rNNUlFAn56Js20
+  
