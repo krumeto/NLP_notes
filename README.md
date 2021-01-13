@@ -6,6 +6,7 @@ A repo to store my NLP notes and exercises
   - Encoder-Decoder - The transformer-based encoder-decoder model is presented and it is explained how the model is used for inference. - https://colab.research.google.com/drive/1XpKHijllH11nAEdPcQvkpYHCVnQikm9G?usp=sharing
   - Encoder - The encoder part of the model is explained in detail. -  https://colab.research.google.com/drive/1HJhnWMFizEKKWEAb-k7QDBv4c03hXbCR?usp=sharing#scrollTo=myjTH2wFeWTU
   - Decoder - The decoder part of the model is explained in detail. - https://colab.research.google.com/drive/1BFgJbPSeAQE7Wz0hgqyaDJj_4wkUrXgt?usp=sharing#scrollTo=U9YCIjCPInpe
+  - Pytorch implementation of simple Transformer from scratch https://colab.research.google.com/drive/1swXWW5sOLW8zSZBaQBYcGQkQ_Bje_bmI
 
 ## SpaCy
   - SpaCy Docs - https://spacy.io/usage/linguistic-features
