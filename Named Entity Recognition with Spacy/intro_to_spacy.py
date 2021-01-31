@@ -1,6 +1,7 @@
 ### Small intro to spaCy, following the Python for Digital Humanities tutorial
 import spacy
 import textacy
+from spacy import displacy
 
 #Breaking into chapters
 with open("./data/alice.txt", 'r', encoding="utf-8") as f:
@@ -14,8 +15,13 @@ nlp = spacy.load('en_core_web_md')
 doc = nlp(chapter1)
 sentences = list(doc.sents)
 
+# for i, sent in enumerate(sentences[:15]):
+#     if 'considering' in sent.text:
+#         print(i, sent)
 
-sentence = sentences[0]
+sentence = sentences[9]
+
+
 # print(sentence)
 # ents = list(sentence.ents)
 # print(ents)
@@ -55,9 +61,29 @@ sentence = sentences[0]
 # for verb_phrase in verb_phrases:
 #     print(verb_phrase)
 
-patterns = [[{"POS": 'NOUN'}, {"POS":"VERB"}, {"POS": 'ADV'}], [{"POS": 'PRON'}, {"POS":"VERB"}, {"POS": 'ADV'}]]
+# patterns = [[{"POS": 'NOUN'}, {"POS":"VERB"}, {"POS": 'ADV'}], [{"POS": 'PRON'}, {"POS":"VERB"}, {"POS": 'ADV'}]]
 
-verb_phrases = textacy.extract.matches(doc, patterns=patterns)
+# verb_phrases = textacy.extract.matches(doc, patterns=patterns)
 
-for verb_phrase in verb_phrases:
-    print(verb_phrase)
+# for verb_phrase in verb_phrases:
+#     print(verb_phrase)
+
+### Lemmatization
+
+# for word in sentence:
+#     if word.pos_ == 'VERB':
+#         print(word, word.lemma_)
+
+### Displacy
+
+colors = {"PERSON": "4E0000"}
+options = {'ents': ['PERSON'], 'colors': colors}
+
+html = displacy.render(
+    sentence, 
+    style="ent",
+    options = options
+    )
+
+with open("dataviz.html", "w") as f:
+    f.write(html)
